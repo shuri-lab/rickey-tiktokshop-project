@@ -1,0 +1,217 @@
+<!-- Upsell (Offer 2: My $4M TikTok Shop System, $97). Loaded into a GHL Custom Code element (#gtu-root).
+     The YES / NO buttons below this block are native GHL buttons (one-click upsell + link to the thank-you page);
+     this file also styles them (see "GHL buttons"). -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Lato:wght@400;700;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+/* HighLevel wrapper: no padding / width cap around this block */
+section:has(#gtu-root),[class*="section-"]:has(#gtu-root),.c-row:has(#gtu-root),.c-column:has(#gtu-root),.inner:has(#gtu-root),.c-custom-code:has(#gtu-root),.custom-code-container:has(#gtu-root){padding:0!important;margin:0!important;max-width:none!important;width:100%!important}
+#gtu{--red:#D30805;--ink:#101017;--cream:#FFF8E7;--line:#E7E3DC;font-family:Lato,system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+#gtu *{box-sizing:border-box}
+#gtu img{max-width:100%;height:auto;display:block}
+#gtu .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+#gtu mark{background:none;color:var(--red);padding:0}
+
+/* 1. alert bar */
+#gtu .alert{background:var(--red);color:#fff;text-align:center;padding:16px 16px 14px}
+#gtu .alert p{margin:0 auto;max-width:860px;font:700 17px/1.4 Lato,sans-serif}
+#gtu .alert p+p{margin-top:6px;font:900 18px/1.35 Poppins,sans-serif}
+#gtu .alert .ok{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--red);font:900 13px/1 Lato,sans-serif;margin-right:7px;vertical-align:2px}
+#gtu .prog{background:var(--ink);color:#fff;padding:10px 16px}
+#gtu .prog-in{max-width:620px;margin:0 auto;display:flex;align-items:center;gap:12px;font:800 13px/1 Poppins,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+#gtu .bar{flex:1;height:12px;border-radius:99px;background:rgba(255,255,255,.18);overflow:hidden}
+#gtu .bar i{display:block;height:100%;width:90%;border-radius:99px;background:repeating-linear-gradient(45deg,#ff3b37 0 10px,var(--red) 10px 20px);background-size:28px 28px;animation:gtustripe 1s linear infinite}
+@keyframes gtustripe{to{background-position:28px 0}}
+
+/* 2. hero */
+#gtu .hero{text-align:center;padding:34px 0 10px}
+#gtu .pill{display:inline-flex;align-items:center;gap:6px;background:var(--cream);border:2px dashed var(--red);color:var(--red);font:800 13px/1 Poppins,sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:9px 14px;border-radius:99px;margin-bottom:16px}
+#gtu h1{font:900 30px/1.15 Poppins,sans-serif;margin:0 auto 22px;max-width:760px;letter-spacing:-.01em}
+#gtu .shot{max-width:760px;margin:0 auto 22px}
+#gtu .ptitle{display:inline-block;background:var(--ink);color:#fff;font:900 26px/1.15 Poppins,sans-serif;padding:10px 18px;border-radius:12px;transform:rotate(-1deg);box-shadow:5px 5px 0 var(--red);margin:0 0 16px}
+#gtu .sub{font-size:19px;line-height:1.5;max-width:680px;margin:0 auto;color:#2b2b33}
+#gtu .sub b{color:var(--ink)}
+
+/* 3. bridge */
+#gtu .bridge{margin:30px auto 0;max-width:720px;background:var(--ink);color:#fff;border-radius:18px;padding:24px 22px}
+#gtu .bridge h2{font:800 22px/1.25 Poppins,sans-serif;margin:0 0 14px;text-align:center}
+#gtu .bridge h2 mark{color:#ff4a46}
+#gtu .wins{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+#gtu .wins li{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.45}
+#gtu .wins li:before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font:900 13px/24px Lato,sans-serif;text-align:center;margin-top:1px}
+
+/* 4. offer stack */
+#gtu .offer{max-width:720px;margin:34px auto 0;border:2px solid var(--ink);border-radius:20px;overflow:hidden;box-shadow:8px 8px 0 var(--red);background:#fff}
+#gtu .offer-head{background:var(--ink);color:#fff;text-align:center;padding:22px 18px 18px}
+#gtu .offer-head h2{font:900 28px/1.15 Poppins,sans-serif;margin:0 0 10px}
+#gtu .offer-head h2 mark{color:#ff4a46}
+#gtu .offer-head span{display:inline-block;background:var(--red);font:800 12.5px/1 Poppins,sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:8px 12px;border-radius:99px}
+#gtu .items{list-style:none;margin:0;padding:6px 20px}
+#gtu .item{display:grid;grid-template-columns:76px 1fr auto;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line)}
+#gtu .item:last-child{border-bottom:0}
+#gtu .item .th{width:76px;height:64px;display:flex;align-items:center;justify-content:center;background:#F4F2EE;border-radius:10px;overflow:hidden}
+#gtu .item .th img{max-height:60px;width:auto}
+#gtu .item h3{font:800 17px/1.25 Poppins,sans-serif;margin:2px 0 4px}
+#gtu .item p{margin:0;font-size:15px;line-height:1.45;color:#3a3a44}
+#gtu .item .val{font:800 17px/1 Poppins,sans-serif;color:#8a8790;padding-top:4px}
+#gtu .item .val s{text-decoration-color:var(--red);text-decoration-thickness:2.5px}
+#gtu .mods{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:5px 14px}
+#gtu .mods li{font-size:13.5px;line-height:1.35;color:#2b2b33;display:flex;gap:6px}
+#gtu .mods b{flex:none;color:var(--red);font:800 12px/1.5 Poppins,sans-serif}
+#gtu .total{display:flex;justify-content:space-between;align-items:baseline;margin:0 20px;padding:16px 0 4px;border-top:2.5px solid var(--ink);font:800 19px/1.2 Poppins,sans-serif}
+#gtu .total s{color:#8a8790;text-decoration-color:var(--red);text-decoration-thickness:3px;font-size:24px}
+#gtu .deal{text-align:center;padding:16px 20px 24px}
+#gtu .save{display:inline-block;background:var(--cream);border:2px dashed var(--red);color:var(--red);font:800 13px/1 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:99px;margin-bottom:12px}
+#gtu .now{margin:0;font:800 20px/1.2 Poppins,sans-serif}
+#gtu .now b{display:block;font:900 64px/1 Poppins,sans-serif;color:var(--red);margin-top:6px;letter-spacing:-.02em}
+#gtu .note{margin:10px 0 0;font-size:15px;color:#4a4a55}
+#gtu .guar{display:flex;gap:12px;align-items:center;max-width:720px;margin:20px auto 0;padding:14px 16px;border-radius:14px;background:#F7F5F1;font-size:15.5px;line-height:1.45}
+#gtu .guar svg{flex:none;width:40px;height:40px}
+#gtu .guar b{font-family:Poppins,sans-serif}
+
+/* 5. lead-in to the buttons */
+#gtu .lead{text-align:center;padding:28px 0 6px}
+#gtu .lead p{margin:0;font:800 19px/1.35 Poppins,sans-serif}
+#gtu .lead p+p{font:700 16px/1.4 Lato,sans-serif;color:#4a4a55;margin-top:4px}
+#gtu .down{display:block;width:34px;height:34px;margin:12px auto 0;color:var(--red);animation:gtudown 1.1s ease-in-out infinite}
+@keyframes gtudown{0%,100%{transform:translateY(-3px)}50%{transform:translateY(6px)}}
+
+@media(min-width:768px){
+ #gtu .alert p{font-size:20px}
+ #gtu .alert p+p{font-size:22px}
+ #gtu .prog-in{font-size:14px}
+ #gtu .hero{padding-top:44px}
+ #gtu h1{font-size:44px}
+ #gtu .ptitle{font-size:38px;padding:12px 24px}
+ #gtu .sub{font-size:21px}
+ #gtu .bridge{padding:30px 34px}
+ #gtu .bridge h2{font-size:26px}
+ #gtu .wins li{font-size:18px}
+ #gtu .offer-head h2{font-size:34px}
+ #gtu .items{padding:8px 30px}
+ #gtu .item{grid-template-columns:92px 1fr auto;gap:18px}
+ #gtu .item .th{width:92px;height:76px}
+ #gtu .item .th img{max-height:72px}
+ #gtu .item h3{font-size:19px}
+ #gtu .item p{font-size:16px}
+ #gtu .mods li{font-size:14.5px}
+ #gtu .total{margin:0 30px;font-size:21px}
+ #gtu .now b{font-size:76px}
+ #gtu .lead p{font-size:23px}
+ #gtu .lead p+p{font-size:18px}
+}
+@media(max-width:420px){
+ #gtu .mods{grid-template-columns:1fr}
+ #gtu .item{grid-template-columns:60px 1fr auto;gap:12px}
+ #gtu .item .th{width:60px;height:56px}
+ #gtu .item .th img{max-height:52px}
+}
+@media(prefers-reduced-motion:reduce){#gtu .bar i,#gtu .down,.gtu-yes{animation:none!important}}
+
+/* ---------- GHL buttons (the two native buttons under this block) ---------- */
+.gtu-btns{max-width:720px;margin:0 auto;padding:6px 18px 40px}
+.gtu-yes,.gtu-yes *{font-family:Poppins,sans-serif!important}
+.gtu-yes{display:block!important;width:100%!important;max-width:720px;margin:0 auto!important;background:var(--gtu-red,#D30805)!important;color:#fff!important;border:2px solid #101017!important;border-radius:14px!important;padding:20px 18px!important;font-weight:900!important;font-size:21px!important;line-height:1.25!important;text-transform:none!important;box-shadow:5px 5px 0 #101017!important;cursor:pointer;animation:gtupulse 1.8s ease-in-out infinite;white-space:normal!important}
+.gtu-yes:hover{filter:brightness(1.06)}
+@keyframes gtupulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+.gtu-no,.gtu-no *{font-family:Lato,sans-serif!important}
+.gtu-no{display:block!important;width:100%!important;max-width:620px;margin:18px auto 0!important;background:none!important;border:0!important;box-shadow:none!important;color:#6b6b75!important;font-weight:700!important;font-size:15px!important;line-height:1.45!important;text-decoration:underline!important;text-underline-offset:3px;text-transform:none!important;padding:6px 10px!important;white-space:normal!important}
+@media(min-width:768px){.gtu-yes{font-size:25px!important;padding:24px 22px!important}.gtu-no{font-size:16px!important}}
+</style>
+
+<div id="gtu">
+  <div class="alert" role="status">
+    <p><span class="ok" aria-hidden="true">✓</span>Your order is confirmed! You'll have access to TikTok Shop Headstart in the next 5 minutes.</p>
+    <p>Don't close this page. Take a look at this exclusive one-time opportunity first ↓</p>
+  </div>
+  <div class="prog"><div class="prog-in"><span>Order 90% complete</span><span class="bar" aria-hidden="true"><i></i></span></div></div>
+
+  <div class="wrap">
+    <section class="hero">
+      <div class="pill">⚡ Exclusive one-time offer</div>
+      <h1>You Just Unlocked Your Headstart. Now Get Your Sales <mark>10x Faster</mark>…</h1>
+      <img class="shot" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/offer-2-system-1280.webp" srcset="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/offer-2-system-720.webp 720w, https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/offer-2-system-1280.webp 1280w" sizes="(min-width: 800px) 760px, 100vw" width="1280" height="720" alt="My $4M TikTok Shop System by Rickey: the video course on a laptop, plus the Hook Bank, Format List and Product Checklist" fetchpriority="high">
+      <div class="ptitle">My $4M TikTok Shop System</div>
+      <p class="sub">The exact system behind my $4M TikTok Shop. <b>How I find winning products, hook people in the first 2 seconds, and film videos that sell</b>, so every video you post has a real shot at making money.</p>
+    </section>
+
+    <section class="bridge">
+      <h2>The Headstart gets you your first sale.<br><mark>This is how you keep them coming.</mark></h2>
+      <ul class="wins">
+        <li>Know if a product will sell <b>before</b> you film it, with the exact panel I read on every product.</li>
+        <li>Stop the scroll in the first 2 seconds with my hook stacks, so your videos get watched instead of skipped.</li>
+        <li>Film a whole week of videos in one sitting, then turn one winning product into steady income.</li>
+      </ul>
+    </section>
+
+    <section class="offer" aria-label="Everything you get">
+      <div class="offer-head">
+        <h2>Everything You <mark>Get Today</mark></h2>
+        <span>One-time $97 · instant access</span>
+      </div>
+      <ul class="items">
+        <li class="item">
+          <div class="th"><img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/o2-course-240.webp" alt="" width="240" height="189" loading="lazy"></div>
+          <div><h3>My $4M TikTok Shop System</h3><p>The full video course. My own method, shown step by step:</p>
+            <ol class="mods">
+              <li><b>1</b>How to find winning products</li>
+              <li><b>2</b>Make videos people can't scroll past</li>
+              <li><b>3</b>Sell without looking like you're selling</li>
+              <li><b>4</b>Turn your views into sales</li>
+              <li><b>5</b>Film a whole week in one sitting</li>
+              <li><b>6</b>Turn one winner into steady income</li>
+              <li><b>7</b>Build multiple income streams</li>
+              <li><b>8</b>Protect your account</li>
+            </ol></div>
+          <div class="val"><s>$297</s></div>
+        </li>
+        <li class="item">
+          <div class="th"><img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/o2-checklist-240.webp" alt="" width="120" height="240" loading="lazy"></div>
+          <div><h3>The Product Checklist</h3><p>The 6 quick checks I run before I film anything, so you only make videos for products that actually sell.</p></div>
+          <div class="val"><s>$47</s></div>
+        </li>
+        <li class="item">
+          <div class="th"><img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/o2-hooks-240.webp" alt="" width="128" height="240" loading="lazy"></div>
+          <div><h3>The Hook Bank</h3><p>How I stop the scroll in the first 2 seconds, with my real hook stacks you can copy.</p></div>
+          <div class="val"><s>$47</s></div>
+        </li>
+        <li class="item">
+          <div class="th"><img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/o2-formats-240.webp" alt="" width="116" height="240" loading="lazy"></div>
+          <div><h3>The Format List</h3><p>The 6 video formats that blend into the feed and still sell, so your videos look like content, not ads.</p></div>
+          <div class="val"><s>$37</s></div>
+        </li>
+      </ul>
+      <div class="total"><span>Total value:</span><s>$428</s></div>
+      <div class="deal">
+        <div class="save">Exclusive discount · you save $331</div>
+        <p class="now">Today, only on this page:<b>$97</b></p>
+        <p class="note">One-time payment. Added to your order in one click, no need to enter your card again.</p>
+      </div>
+    </section>
+
+    <div class="guar">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#D30805"/><path d="M20 9 11 12.5v6.5c0 5.6 3.8 9.7 9 11.3 5.2-1.6 9-5.7 9-11.3v-6.5z" fill="#fff"/><path d="m15.5 20 3 3 6-6" fill="none" stroke="#D30805" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>Your money's protected.</b> Do the work and still no sale? You get a full refund.</span>
+    </div>
+
+    <div class="lead">
+      <p>➡️ This is an exclusive one-time offer.</p>
+      <p>Only available right here, right now. Once you leave this page, it's gone.</p>
+      <svg class="down" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 5v22M8 18l9 9 9-9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</div>
+<script>
+document.title='One-time offer | My $4M TikTok Shop System';
+(function(){
+  // style the native GHL buttons: the one starting "YES!" and the one starting "No thanks"
+  function tag(){
+    document.querySelectorAll('.c-button a, .c-button button').forEach(function(b){
+      var t=(b.textContent||'').trim().toLowerCase();
+      if(t.indexOf('yes!')===0) b.classList.add('gtu-yes');
+      else if(t.indexOf('no thanks')===0) b.classList.add('gtu-no');
+    });
+  }
+  tag(); var n=0,iv=setInterval(function(){tag();if(++n>30)clearInterval(iv);},300);
+})();
+</script>

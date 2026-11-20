@@ -126,7 +126,6 @@ Total value: $201
 You save $174
 Today: just $27.
 No subscription. No upsell required.
-Want a shortcut on picking products? You can add The Starter Product List at checkout for $17. The product lanes that sell all year + the one move to find today's winner in any lane.
 <!-- Guarantee moved to its own block right after the offer (client request, Nov 20) -->
 Your Money's Protected
 Do the 30-day challenge, post every day, and if you haven't made a sale in 90 days, you get a full refund.

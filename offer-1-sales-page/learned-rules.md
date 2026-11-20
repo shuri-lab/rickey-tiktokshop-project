@@ -1,0 +1,54 @@
+# Learned rules (Rickey / Game Tape - TikTok Shop Headstart)
+- Item values for section 7 were set by the client: course $57, challenge $47, templates $29, private channel $97 = $230 total value. Keep the word "value", never "regular price".
+- No testimonials yet: section 9 = brother + friend stories with screenshot spots, section 10 = Rickey's own proof (headline "Don't Take My Word for It."), section 13 skipped until student wins come in.
+- Founder photo: use rickey-photo.jpeg from the project folder (client's choice).
+- Use the brand logos (Casio, DJI, McDonald's, Meta, Puma, Subway) in section 12 even though the copy only names Nike, Subway and Temu; the client may update the copy later.
+- Client wants Rickey's TikTok videos on the page as muted autoplay loops (like the reel on gametape-blue.vercel.app/offer-first-seven), made light: use the Cloudinary links with w_360,q_auto,ac_none,du_12.
+- Use all TikTok screenshots, in a slider.
+- Never use dashes (— or –) anywhere on the page. Use commas, colons, "for" or "to" instead.
+- Never use the word "steal" (buttons say "GET", not "STEAL").
+- Hero: the mockup image goes right under the headline.
+- No refund line under the buttons; the hero button only has "One-time $27 · instant access".
+- Section 2 headline ends "You Need to Start Posting."
+- Videos: a horizontal carousel of Rickey's videos in section 2 (dark section).
+- Section 3 shows Rickey's photo + the brand logos beside the story (they also stay in section 12).
+- More black sections so the page doesn't read as one long section: 2, 5, 8, 11 are dark.
+- Font test: Poppins for big text, Lato for small text, Caveat for handwritten.
+- Alert bar at the very top of the page: "One-time $27 · instant access".
+- The headline pill says "$4M+ in TikTok Shop sales · top-1% creator" (no "RICKEY").
+- Hero subheadline (client wording, Nov 20): "Follow the same plan behind Rickey's $4M+ in TikTok Shop sales: a 7-day course on how to find winning products, make viral videos, and make sales, plus a 30-day plan that walks you there, one video a day. No following, no camera experience, no guessing what to film."
+- Mobile first (90% of visitors): on an iPhone 16 (393x852) the alert bar, logo, pill, headline, hero image, subheadline and button must all fit on the first screen.
+- Hero subheadline highlights: marker on "behind Rickey's $4M+ in TikTok Shop sales"; red bold on "find winning products", "make viral videos", "make sales". Do not highlight "one video a day".
+- Every button says "GET INSTANT ACCESS · $27 →". All buttons jump to the offer stack (#buy); only the offer stack button goes to checkout.
+- Sticky bottom bar after the hero ("Instant access · $27" + button), hidden while the offer stack is on screen. Brand logo slider ("Brands Rickey has worked with") right under the hero.
+- Section 2 outcomes have images: outcome 1 = TikTok screenshots, outcome 2 = product check screenshots, outcome 3 = private WhatsApp channel (AI image).
+- Section 3 on mobile: headline first, then Rickey's photo + logos, then the story. Client will send real Best Buy photos.
+- Section 5: no 01/02/03 numbers, bigger text, cleaner dark cards.
+- Offer stack (section 7) styled after the JJ Smith page: clean card, numbered steps, add-on box, one big button.
+- Reference for clean components: mycoach.jjsmithonline.com/look-younger (alert bar gradient, sticky mobile CTA, press logo slider, offer stack).
+- Mobile hero must not feel cramped: alert bar text 12.5px, logo 150px, pill 13.5px, subheadline 17px/1.55, and the button full width. Still fits the iPhone 16 screen (button ends ~764px of 852).
+- Section 3 story: give each beat its own look (bold lead line, red "Then TikTok Shop.", crossed-out "looked good" line in a box, the gut-cleanse moment with a red left line, the gem in handwriting) so lines don't all look the same. Same words.
+- The guarantee is its own block right after the offer stack (seal + "Your Money's Protected"), not inside the offer card.
+- Desktop: hero in two columns (text left, mockup right) and fits the first screen; section 2 outcomes show text left, image right.
+- ChatGPT images live in Rickey-TikTokShop-Project-Files/offer-1-page-images. Watch for brand logos (Nike swoosh) in generated sneakers.
+- "The Templates to Run It" is NOT included in the offer. Never list it. What you get = course ($57) + 30-day challenge with both milestone playbooks ($47) + private channel ($97) = $201 total value, you save $174.
+- The 30-day challenge image is a built-in phone visual (30-day grid, Day 7 streak, locked milestones) until a real image exists. Never use the PDF cover for it.
+- Section 3: the brand logos under Rickey's photo are a slider (same as the strip under the hero), with clear space before "I didn't come from money."
+- Desktop hero: image bigger (about 700px wide at 1280) and the brand logo strip must show on the first screen at 1280x800 and 1440x900.
+- Offer stack v2: dark header band, product mockup, item rows with thumbnails and red values, price box with "You save", add-on, button, trust row (one-time payment, instant access, 90-day refund).
+- Hero (and the final close) use images/hero-headstart-mockup-nobg.png ("offer 1 image v3 no background"), so the mockup sits on the gradient.
+- Hero subheadline: "...behind Rickey's $4M+ in TikTok Shop sales: how to find winning products, make viral videos, and make sales, plus a 30-day plan..." (no "a 7-day course").
+- Sliders must never run out: the logo and screenshot tracks double themselves until each loop is wider than the screen; the video carousel is capped at 1040px so it always fills.
+- Section 2 outcome boxes: titles are real headings (Poppins, 29px on desktop, 19px on phones), text 21px on desktop.
+- Offer stack: each item shows its value crossed out ("$57 value"), and the price is a side-by-side compare: "Total value: $201" crossed out vs "Today: just $27.", then "You save $174".
+- Offer price uses the JJ Smith structure (not branding): item list with crossed-out prices on the right ($57, $47, $97), a "Total value: $201" bar, then a red-bordered deal box with a "You save $174" badge on its edge, "Today: just $27." big, the note, the button and the trust row inside it; the $17 add-on comes after. Never "Today only" (no deadline exists).
+- Mobile brand logo strip is big and hard to miss: 40px logos, 26px padding, 12.5px label.
+- Offer 1 includes ONLY: the 7-Day Headstart Course, the 30-day plan (The 30-Day First Sale Challenge) and The Rickey Army Private Channel. No templates, no milestone playbooks. (The Nov 14 offer ladder and the v11 offer stack PDF are older and list other items; the client's word wins.)
+- The channel's name is "The Rickey Army Private Channel" (a private WhatsApp channel).
+- 30-day challenge image: images/challenge-30-day.png ("Pack de desafío Game Tape 30 días"), used in section 6 and as the offer thumbnail.
+- Go-live rule: never show image placeholders. If an image doesn't exist, leave the spot out (section 9 runs text only; section 10 runs the TikTok slider only).
+- Section 3 photo: images/rickey-bestbuy.jpg (Rickey in a Best Buy polo on a commercial set). Story uses his Instagram post: worked at Best Buy to pay for acting classes; years later shot a Best Buy commercial; "only temporary", "end goal", "patience + persistence". Don't add a year count (the "7 years ago" was relative to an old post).
+- Footer disclaimers are drafted (earnings, TikTok/ByteDance non-affiliation, refund policy); client to approve.
+- Section 3 shows two polaroids: Best Buy photo first, then the red carpet photo (rickey-photo). Phones: side by side. Desktop: stacked, slightly overlapping; the photo column no longer sticks while scrolling.
+- Section 3 opens with the Best Buy full circle (worked there to pay for acting classes, years later shooting a commercial for them), then "But it didn't happen overnight." No "Calling myself an actor in my Best Buy shirt" line.
+- OVERRIDES the Instagram lines above: section 3 story text stays exactly as the original copy ("I didn't come from money. I was working at Best Buy, calling myself an actor..."). Do not rewrite it. Only the two photos (Best Buy + red carpet) were added.

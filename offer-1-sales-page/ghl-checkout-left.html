@@ -1,5 +1,8 @@
+<!-- Checkout (Offer 1): left column + styling for the GHL order form on the right.
+     Desktop: full offer column (.gtc-d). Phone: one compact summary card (.gtc-m) so the form shows above the fold. -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
+/* ---------- left column ---------- */
 #gtc{font-family:Lato,system-ui,sans-serif;color:#101017;max-width:520px;margin:0 auto;padding:8px 4px 24px}
 #gtc *{box-sizing:border-box}
 #gtc .lg{display:block;height:34px;width:auto;margin:0 0 18px}
@@ -22,26 +25,130 @@
 #gtc .g{display:flex;gap:12px;align-items:flex-start;margin-top:18px;padding:14px 16px;border:2px dashed #D30805;border-radius:14px;font-size:15px;line-height:1.45}
 #gtc .g b{display:block;font:700 15px/1.3 Poppins,sans-serif;margin-bottom:3px}
 #gtc .gi{flex:0 0 34px;height:34px;border-radius:50%;background:#101017;color:#fff;font:900 16px/34px Lato,sans-serif;text-align:center}
-@media(max-width:767px){#gtc{padding:4px 0 8px}#gtc h1{font-size:22px}#gtc .lg{height:28px;margin-bottom:12px}#gtc .mock{max-width:420px;margin:0 auto 14px}}
+#gtc .gtc-m{display:none}
+
+/* phone: compact summary only */
+@media(max-width:767px){
+ #gtc{padding:0}
+ #gtc .gtc-d{display:none}
+ #gtc .gtc-m{display:block}
+ .gtc-m .mlg{display:block;height:22px;width:auto;margin:2px auto 10px}
+ .gtc-m .card{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:center;background:#101017;color:#fff;border-radius:14px;padding:10px 12px}
+ .gtc-m .card img{width:96px;height:auto;display:block}
+ .gtc-m .t{font:800 16px/1.2 Poppins,sans-serif;margin:0 0 3px}
+ .gtc-m .inc{font-size:12.5px;line-height:1.35;color:rgba(255,255,255,.78);margin:0 0 6px}
+ .gtc-m .pr{display:flex;align-items:center;gap:8px;font:800 14px/1 Poppins,sans-serif}
+ .gtc-m .pr s{color:rgba(255,255,255,.55);font-weight:600}
+ .gtc-m .pr b{background:#D30805;border-radius:6px;padding:4px 8px;font-size:15px}
+ .gtc-m .tr{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:8px 0 0;font:700 11.5px/1.2 Lato,sans-serif;color:#4a4a55}
+ .gtc-m .tr span:before{content:"✓ ";color:#D30805;font-weight:900}
+ /* less empty space around the GHL rows on phones */
+ [class*="section-"]:has(.c-order-form){padding-top:6px!important;padding-bottom:6px!important}
+ .c-column:has(#gtc-root)>.inner,.c-column:has(.c-order-form)>.inner{padding-top:4px!important;padding-bottom:4px!important}
+}
+
+/* ---------- GHL order form ---------- */
+.c-order-form,.c-order-form *{font-family:Lato,system-ui,sans-serif}
+.c-order-form .order-form__surface{background:#fff;border:1px solid #E7E3DC!important;border-radius:16px!important;box-shadow:0 10px 30px rgba(16,16,23,.07)!important;padding:22px 20px!important}
+/* steps 1 + 2 */
+.c-order-form{counter-reset:gtstep}
+.c-order-form .order-form__headline,.c-order-form .order-form__pay-head{display:flex!important;align-items:center;gap:10px;font:800 19px/1.2 Poppins,sans-serif!important;color:#101017!important;margin:0 0 14px!important;letter-spacing:0}
+.c-order-form .order-form__headline:before,.c-order-form .order-form__pay-head:before{counter-increment:gtstep;content:counter(gtstep);flex:none;width:28px;height:28px;border-radius:50%;background:#101017;color:#fff;font:800 14px/28px Poppins,sans-serif;text-align:center}
+.c-order-form .order-form__subheadline{display:none!important}
+/* inputs: clear boxes instead of a thin underline */
+.c-order-form .order-form__field-grid{gap:12px 14px!important}
+.c-order-form .order-form__label{display:block;font:700 14px/1.2 Lato,sans-serif!important;color:#101017!important;margin:0 0 6px!important;text-transform:none!important;letter-spacing:0!important}
+.c-order-form .order-form__input{box-sizing:border-box!important;width:100%!important;height:50px!important;padding:0 14px!important;background:#FAF9F7!important;border:1.5px solid #D6D2CA!important;border-radius:10px!important;font:400 16px/1 Lato,sans-serif!important;color:#101017!important;box-shadow:none!important;outline:none!important;transition:border-color .15s,box-shadow .15s,background .15s}
+.c-order-form .order-form__input::placeholder{color:#9A968F!important;opacity:1}
+.c-order-form .order-form__input:hover{border-color:#B9B4AA!important}
+.c-order-form .order-form__input:focus{background:#fff!important;border-color:#D30805!important;box-shadow:0 0 0 4px rgba(211,8,5,.12)!important}
+.c-order-form .gt-help{display:block;font:400 12.5px/1.3 Lato,sans-serif;color:#6b6b75;margin-top:6px}
+/* no "Select Product" table: the product is already chosen (stays selected, just hidden) */
+.c-order-form .order-form__offer{display:none!important}
+.c-order-form .order-form__summary-row:not(.order-form__summary-row--total){display:none!important}
+.c-order-form .order-form__summary{border-top:1px solid #ECE8E1;margin-top:14px!important;padding-top:12px!important}
+.c-order-form .order-form__summary-row--total{font:800 16px/1.2 Poppins,sans-serif!important;color:#101017!important}
+
+/* ---------- order bump: make it pop ---------- */
+.c-order-form .order-form__bumps{margin:18px 0 0!important}
+.c-order-form .order-form__bump{position:relative;display:grid!important;grid-template-columns:auto auto 1fr;align-items:start;column-gap:10px;padding:0 14px 14px!important;background:#FFF8E7!important;border:2.5px dashed #D30805!important;border-radius:14px!important;overflow:hidden;animation:gtglow 2.2s ease-in-out infinite;box-shadow:none}
+.c-order-form .order-form__bump:has(.order-form__bump-check:checked){background:#FFEDEC!important;border-style:solid!important;animation:none;box-shadow:0 0 0 4px rgba(211,8,5,.12)}
+@keyframes gtglow{0%,100%{box-shadow:0 0 0 0 rgba(211,8,5,.0)}50%{box-shadow:0 0 0 6px rgba(211,8,5,.16)}}
+.c-order-form .gt-bump-top{grid-column:1/-1;margin:0 -14px 12px;background:#D30805;color:#fff;text-align:center;font:800 12.5px/1 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:9px 10px}
+.c-order-form .gt-arrow{grid-column:1;align-self:start;margin-top:1px;width:30px;height:24px;color:#D30805;animation:gtnudge 1s ease-in-out infinite}
+.c-order-form .gt-arrow svg{display:block;width:30px;height:24px}
+@keyframes gtnudge{0%,100%{transform:translateX(-3px)}50%{transform:translateX(4px)}}
+.c-order-form .order-form__bump-check{grid-column:2;width:24px!important;height:24px!important;margin:1px 0 0!important;accent-color:#D30805;cursor:pointer;flex:none}
+.c-order-form .order-form__bump-body{grid-column:3;min-width:0}
+.c-order-form .gt-bump-img{float:right;width:96px;height:auto;margin:0 0 6px 10px;border-radius:8px}
+.c-order-form .order-form__bump-headline{font:800 17px/1.25 Poppins,sans-serif!important;color:#101017!important;margin:0 0 4px!important;text-decoration:underline;text-decoration-color:rgba(211,8,5,.45);text-underline-offset:3px}
+.c-order-form .order-form__bump-oto{font:800 13.5px/1.3 Lato,sans-serif!important;color:#D30805!important;margin:0 0 6px!important}
+.c-order-form .order-form__bump-desc{font:400 14.5px/1.45 Lato,sans-serif!important;color:#2b2b33!important}
+.c-order-form .order-form__bump-desc b{font-weight:900;color:#101017}
+.c-order-form .order-form__bump-price{display:none!important}
+@media(max-width:400px){.c-order-form .gt-bump-img{width:78px}.c-order-form .order-form__bump-headline{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.c-order-form .order-form__bump,.c-order-form .gt-arrow{animation:none}}
 </style>
+
 <div id="gtc">
-  <img class="lg" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/logo-gametape-black.png" alt="Game Tape">
-  <div class="pill">You're one step away</div>
-  <h1>Get Your First TikTok Shop Sales in the Next 30 Days, <span>Starting From Zero</span></h1>
-  <img class="mock" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/hero-headstart-mockup-nobg.png" alt="TikTok Shop Headstart">
-  <div class="box">
-    <h2>What you get today</h2>
-    <ul>
-      <li><span class="ck">✓</span><span><b>The 7-Day Headstart Course</b><s>$57</s></span></li>
-      <li><span class="ck">✓</span><span><b>The 30-Day First Sale Challenge</b><s>$47</s></span></li>
-      <li><span class="ck">✓</span><span><b>The Rickey Army Private Channel</b><s>$97</s></span></li>
-    </ul>
-    <div class="tot"><span>Total value</span><s>$201</s></div>
-    <div class="now"><span>Today</span><span>$27</span></div>
+  <!-- desktop -->
+  <div class="gtc-d">
+    <img class="lg" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/logo-gametape-black-400.webp" alt="Game Tape" width="400" height="58">
+    <div class="pill">You're one step away</div>
+    <h1>Get Your First TikTok Shop Sales in the Next 30 Days, <span>Starting From Zero</span></h1>
+    <img class="mock" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/hero-headstart-mockup-nobg-1280.webp" alt="TikTok Shop Headstart" width="1280" height="720">
+    <div class="box">
+      <h2>What you get today</h2>
+      <ul>
+        <li><span class="ck">✓</span><span><b>The 7-Day Headstart Course</b><s>$57</s></span></li>
+        <li><span class="ck">✓</span><span><b>The 30-Day First Sale Challenge</b><s>$47</s></span></li>
+        <li><span class="ck">✓</span><span><b>The Rickey Army Private Channel</b><s>$97</s></span></li>
+      </ul>
+      <div class="tot"><span>Total value</span><s>$201</s></div>
+      <div class="now"><span>Today</span><span>$27</span></div>
+    </div>
+    <div class="g"><span class="gi">✓</span><span><b>Your Money's Protected</b>Do the 30-day challenge, post every day, and if you haven't made a sale in 90 days, you get a full refund.</span></div>
   </div>
-  <div class="g"><span class="gi">✓</span><span><b>Your Money's Protected</b>Do the 30-day challenge, post every day, and if you haven't made a sale in 90 days, you get a full refund.</span></div>
+  <!-- phone -->
+  <div class="gtc-m">
+    <img class="mlg" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/logo-gametape-black-400.webp" alt="Game Tape" width="400" height="58">
+    <div class="card">
+      <img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/hero-headstart-mockup-nobg-720.webp" alt="TikTok Shop Headstart" width="720" height="405">
+      <div>
+        <p class="t">TikTok Shop Headstart</p>
+        <p class="inc">7-Day Course + 30-Day Challenge + Rickey Army channel</p>
+        <div class="pr"><s>$201</s><b>$27 today</b></div>
+      </div>
+    </div>
+    <div class="tr"><span>One-time payment</span><span>Instant access</span><span>90-day refund</span></div>
+  </div>
 </div>
+
 <script>
-(function(){function h(){document.querySelectorAll('p,div,span,h2,h3,h4').forEach(function(e){if(e.children.length===0&&e.textContent.trim()==='Upgrade Your Order & Save!'){e.style.display='none';}});}
-h();setTimeout(h,800);setTimeout(h,2500);})();
+(function(){
+  var IMG='https://shuri-lab.github.io/rickey-tiktokshop-project/images/opt/starter-product-list-320.webp';
+  var ARROW='<svg viewBox="0 0 30 24" aria-hidden="true"><path d="M2 12h20M15 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  function enhance(){
+    var f=document.querySelector('.c-order-form'); if(!f) return;
+    // clearer placeholders + a hint under email
+    var n=f.querySelector('input[aria-label="Full Name"]'); if(n&&n.placeholder!=='Your full name') n.placeholder='Your full name';
+    var e=f.querySelector('input[type="email"]');
+    if(e){ if(e.placeholder!=='you@example.com') e.placeholder='you@example.com';
+      e.setAttribute('autocomplete','email');
+      var c=e.parentNode; if(c&&!c.querySelector('.gt-help')){var s=document.createElement('span');s.className='gt-help';s.textContent='Your course login is sent here.';c.appendChild(s);} }
+    if(n) n.setAttribute('autocomplete','name');
+    // order bump: banner, arrow, image
+    var b=f.querySelector('.order-form__bump');
+    if(b){
+      if(!b.querySelector('.gt-bump-top')){var t=document.createElement('div');t.className='gt-bump-top';t.textContent='⚡ One-time offer · only on this page';b.insertBefore(t,b.firstChild);}
+      var cb=b.querySelector('.order-form__bump-check');
+      if(cb&&!b.querySelector('.gt-arrow')){var a=document.createElement('span');a.className='gt-arrow';a.innerHTML=ARROW;b.insertBefore(a,cb);}
+      var body=b.querySelector('.order-form__bump-body');
+      if(body&&!body.querySelector('.gt-bump-img')){var i=document.createElement('img');i.className='gt-bump-img';i.src=IMG;i.alt='The Starter Product List';i.width=320;i.height=200;body.insertBefore(i,body.firstChild);}
+    }
+  }
+  enhance();
+  var tries=0,iv=setInterval(function(){enhance();if(++tries>40)clearInterval(iv);},250);
+  if('MutationObserver' in window){new MutationObserver(function(){enhance();}).observe(document.body,{childList:true,subtree:true});}
+})();
 </script>

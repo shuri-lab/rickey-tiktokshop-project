@@ -38,3 +38,19 @@ Total value $201, today $27. Order bump at checkout: The Starter Product List, $
 
 ## Brand
 Game Tape: red `#D30805`, black `#101017`, white. Page fonts: Poppins (headings), Lato (body), Caveat (handwritten notes).
+
+## GoHighLevel funnel (live, Nov 20 2026)
+
+Funnel "Rickey · TikTok Shop Headstart" in the Hot Pursuit LLC sub-account, on davidhsai.com:
+
+| Step | URL | How it's built |
+|---|---|---|
+| Sales page | /headstart-page | Custom Code loader → `offer-1-sales-page/ghl-sales-page.html` |
+| Checkout | /headstart-checkout | Left: loader → `offer-1-sales-page/ghl-checkout-left.html`. Right: GHL order form, $27 + $17 bump checkbox |
+| Upsell | /headstart-upsell | Not built yet (Offer 2) |
+| Thank you | /headstart-thank-you | Loader → `offer-1-sales-page/ghl-thank-you.html` (links in `GT_LINKS` at the bottom) |
+
+- **Course:** Memberships → "TikTok Shop Headstart" (Start here + Day 1 to Day 7, videos to upload). Login: the client portal.
+- **Workflows:** "Rickey · Headstart delivery" (order with the $27 product → grant course → delivery email) and "Rickey · Starter Product List delivery" (order with the bump → download email).
+- **Downloads:** `downloads/` (public for now; move to GHL Media before making the repo private).
+- **Still to fill:** WhatsApp channel link (thank-you `GT_LINKS.whatsapp` + delivery email `WHATSAPP-LINK-GOES-HERE`), support email (`GT_LINKS.support`), course thumbnail and videos, sender name/email.

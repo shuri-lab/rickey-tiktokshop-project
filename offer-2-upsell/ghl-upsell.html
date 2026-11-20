@@ -27,7 +27,7 @@ section:has(#gtu-root),[class*="section-"]:has(#gtu-root),.c-row:has(#gtu-root),
 #gtu .hero{text-align:center;padding:34px 0 10px}
 #gtu .pill{display:inline-flex;align-items:center;gap:6px;background:var(--cream);border:2px dashed var(--red);color:var(--red);font:800 13px/1 Poppins,sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:9px 14px;border-radius:99px;margin-bottom:16px}
 #gtu h1{font:900 30px/1.15 Poppins,sans-serif;margin:0 auto 22px;max-width:760px;letter-spacing:-.01em}
-#gtu .shot{max-width:760px;margin:0 auto 22px}
+#gtu .shot{width:100%;max-width:760px;margin:0 auto 22px}
 #gtu .ptitle{display:inline-block;background:var(--ink);color:#fff;font:900 26px/1.15 Poppins,sans-serif;padding:10px 18px;border-radius:12px;transform:rotate(-1deg);box-shadow:5px 5px 0 var(--red);margin:0 0 16px}
 #gtu .sub{font-size:19px;line-height:1.5;max-width:680px;margin:0 auto;color:#2b2b33}
 #gtu .sub b{color:var(--ink)}
@@ -109,7 +109,9 @@ section:has(#gtu-root),[class*="section-"]:has(#gtu-root),.c-row:has(#gtu-root),
 @media(prefers-reduced-motion:reduce){#gtu .bar i,#gtu .down,.gtu-yes{animation:none!important}}
 
 /* ---------- GHL buttons (the two native buttons under this block) ---------- */
-.gtu-btns{max-width:720px;margin:0 auto;padding:6px 18px 40px}
+.c-button:has(.gtu-yes){padding:4px 18px 0!important;max-width:756px;margin:0 auto!important}
+.c-custom-code:has(.gtu-no){padding:0 18px 44px!important}
+[class*="section-"]:has(.gtu-yes){padding-bottom:0!important}
 .gtu-yes,.gtu-yes *{font-family:Poppins,sans-serif!important}
 .gtu-yes{display:block!important;width:100%!important;max-width:720px;margin:0 auto!important;background:var(--gtu-red,#D30805)!important;color:#fff!important;border:2px solid #101017!important;border-radius:14px!important;padding:20px 18px!important;font-weight:900!important;font-size:21px!important;line-height:1.25!important;text-transform:none!important;box-shadow:5px 5px 0 #101017!important;cursor:pointer;animation:gtupulse 1.8s ease-in-out infinite;white-space:normal!important}
 .gtu-yes:hover{filter:brightness(1.06)}

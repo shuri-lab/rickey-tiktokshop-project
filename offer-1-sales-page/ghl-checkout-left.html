@@ -66,7 +66,7 @@
 /* no "Select Product" table: the product is already chosen (stays selected, just hidden) */
 .c-order-form .order-form__offer{display:none!important}
 .c-order-form .order-form__summary-row:not(.order-form__summary-row--total){display:none!important}
-.c-order-form .order-form__summary{border-top:1px solid #ECE8E1;margin-top:14px!important;padding-top:12px!important}
+.c-order-form .order-form__summary{margin-top:14px!important;padding-top:4px!important}
 .c-order-form .order-form__summary-row--total{font:800 16px/1.2 Poppins,sans-serif!important;color:#101017!important}
 
 /* ---------- order bump: make it pop ---------- */
@@ -79,14 +79,17 @@
 .c-order-form .gt-arrow svg{display:block;width:30px;height:24px}
 @keyframes gtnudge{0%,100%{transform:translateX(-3px)}50%{transform:translateX(4px)}}
 .c-order-form .order-form__bump-check{grid-column:2;width:24px!important;height:24px!important;margin:1px 0 0!important;accent-color:#D30805;cursor:pointer;flex:none}
-.c-order-form .order-form__bump-body{grid-column:3;min-width:0}
-.c-order-form .gt-bump-img{float:right;width:96px;height:auto;margin:0 0 6px 10px;border-radius:8px}
+.c-order-form .order-form__bump-body{display:contents!important}
+.c-order-form .order-form__bump-headline,.c-order-form .order-form__bump-oto{grid-column:3;min-width:0}
+.c-order-form .order-form__bump-desc{grid-column:1/-1;margin-top:8px!important}
+.c-order-form .order-form__bump-desc:after{content:"";display:block;clear:both}
+.c-order-form .gt-bump-img{float:right;width:110px;height:auto;margin:2px 0 6px 12px;border-radius:8px}
 .c-order-form .order-form__bump-headline{font:800 17px/1.25 Poppins,sans-serif!important;color:#101017!important;margin:0 0 4px!important;text-decoration:underline;text-decoration-color:rgba(211,8,5,.45);text-underline-offset:3px}
 .c-order-form .order-form__bump-oto{font:800 13.5px/1.3 Lato,sans-serif!important;color:#D30805!important;margin:0 0 6px!important}
 .c-order-form .order-form__bump-desc{font:400 14.5px/1.45 Lato,sans-serif!important;color:#2b2b33!important}
 .c-order-form .order-form__bump-desc b{font-weight:900;color:#101017}
 .c-order-form .order-form__bump-price{display:none!important}
-@media(max-width:400px){.c-order-form .gt-bump-img{width:78px}.c-order-form .order-form__bump-headline{font-size:16px}}
+@media(max-width:400px){.c-order-form .gt-bump-img{width:96px}.c-order-form .order-form__bump-headline{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.c-order-form .order-form__bump,.c-order-form .gt-arrow{animation:none}}
 </style>
 
@@ -143,8 +146,8 @@
       if(!b.querySelector('.gt-bump-top')){var t=document.createElement('div');t.className='gt-bump-top';t.textContent='⚡ One-time offer · only on this page';b.insertBefore(t,b.firstChild);}
       var cb=b.querySelector('.order-form__bump-check');
       if(cb&&!b.querySelector('.gt-arrow')){var a=document.createElement('span');a.className='gt-arrow';a.innerHTML=ARROW;b.insertBefore(a,cb);}
-      var body=b.querySelector('.order-form__bump-body');
-      if(body&&!body.querySelector('.gt-bump-img')){var i=document.createElement('img');i.className='gt-bump-img';i.src=IMG;i.alt='The Starter Product List';i.width=320;i.height=200;body.insertBefore(i,body.firstChild);}
+      var d=b.querySelector('.order-form__bump-desc');
+      if(d&&!d.querySelector('.gt-bump-img')){var i=document.createElement('img');i.className='gt-bump-img';i.src=IMG;i.alt='The Starter Product List';i.width=320;i.height=200;d.insertBefore(i,d.firstChild);}
     }
   }
   enhance();

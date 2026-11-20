@@ -47,10 +47,15 @@ Funnel "Rickey · TikTok Shop Headstart" in the Hot Pursuit LLC sub-account, on 
 |---|---|---|
 | Sales page | /headstart-page | Custom Code loader → `offer-1-sales-page/ghl-sales-page.html` |
 | Checkout | /headstart-checkout | Left: loader → `offer-1-sales-page/ghl-checkout-left.html`. Right: GHL order form, $27 + $17 bump checkbox |
-| Upsell | /headstart-upsell | Not built yet (Offer 2) |
+| Upsell | /headstart-upsell | Loader → `offer-2-upsell/ghl-upsell.html` + native GHL YES button (one-click upsell, $97 product "Rickey · My $4M TikTok Shop System") + NO link to the thank-you page |
 | Thank you | /headstart-thank-you | Loader → `offer-1-sales-page/ghl-thank-you.html` (links in `GT_LINKS` at the bottom) |
 
 - **Course:** Memberships → "TikTok Shop Headstart" (Start here + Day 1 to Day 7, videos to upload). Login: the client portal.
 - **Workflows:** "Rickey · Headstart delivery" (order with the $27 product → grant course → delivery email) and "Rickey · Starter Product List delivery" (order with the bump → download email).
 - **Downloads:** `downloads/` (public for now; move to GHL Media before making the repo private).
 - **Still to fill:** WhatsApp channel link (thank-you `GT_LINKS.whatsapp` + delivery email `WHATSAPP-LINK-GOES-HERE`), support email (`GT_LINKS.support`), course thumbnail and videos, sender name/email.
+
+### Speed (Nov 20 update)
+- Every page image is served as WebP at its display size from `images/opt/` (built by the image optimizer; originals stay in `images/`). Full-scroll image weight: ~1.2 MB on phones, ~1.5 MB on desktop (was ~15 MB).
+- Carousel videos: Cloudinary `w_320,q_auto:eco,du_10,f_auto`, loaded only near the viewport; the loop duplicates reuse the cached file.
+- The checkout's after-purchase setting is "Go to the next funnel step" (Checkout → Upsell → Thank You).

@@ -21,13 +21,14 @@ section:has(#gtty-root),[class*="section-"]:has(#gtty-root),.c-row:has(#gtty-roo
 #gty .btn.dark{background:#101017}
 #gty .btn.off{background:#c9c9cf;pointer-events:none}
 #gty .note{font-size:15px;color:#6b6b75;margin-top:10px}
+#gty .wa{display:flex;gap:16px;align-items:center;margin-bottom:14px}#gty .wa p{margin:0}#gty .wap{flex:none;width:84px;height:84px;border-radius:50%;object-fit:cover}#gty .waqr{display:flex;gap:18px;align-items:center;margin-top:18px;font-size:15px;color:#6b6b75;line-height:1.5}#gty .waqr img{flex:none;width:150px;height:150px;border-radius:21px;border:1px solid #E7E3DC}
 #gty .rk{display:flex;gap:16px;align-items:center;background:#101017;color:#fff;border-radius:18px;padding:22px 20px;margin:28px 0 22px}
 #gty .rk img{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #D30805}
 #gty .rk q{display:block;font-size:18px;line-height:1.5;quotes:none}
 #gty .rk .sig{font:700 28px/1 Caveat,cursive;color:#D30805;margin-top:8px}
 #gty .small{text-align:center;font-size:15px;color:#6b6b75;line-height:1.5}
 #gty .small a{color:#D30805}
-@media(max-width:767px){#gty .top{padding:30px 16px 50px}#gty h1{font-size:28px}#gty .sub{font-size:17px}#gty .step{flex-direction:column;gap:10px;padding:20px 18px}#gty .step h2{margin-top:0}#gty .btn{width:100%;justify-content:center}#gty .rk{flex-direction:column;text-align:center}}
+@media(max-width:767px){#gty .waqr{display:none}#gty .wap{width:72px;height:72px}#gty .top{padding:30px 16px 50px}#gty h1{font-size:28px}#gty .sub{font-size:17px}#gty .step{flex-direction:column;gap:10px;padding:20px 18px}#gty .step h2{margin-top:0}#gty .btn{width:100%;justify-content:center}#gty .rk{flex-direction:column;text-align:center}}
 </style>
 <div id="gty">
   <div class="top">
@@ -49,9 +50,13 @@ section:has(#gtty-root),[class*="section-"]:has(#gtty-root),.c-row:has(#gtty-roo
     </div></div>
     <div class="step"><div class="n">3</div><div>
       <h2>Join the Rickey Army.</h2>
-      <p>My private WhatsApp channel, where I post what's working on TikTok Shop right now.</p>
+      <div class="wa">
+        <img class="wap" src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/whatsapp-rickey-army-profile.jpg" width="84" height="84" alt="Rickey Army WhatsApp channel">
+        <p>My private WhatsApp channel, where I post what's working on TikTok Shop right now.</p>
+      </div>
       <div class="btns"><a class="btn" id="gty-wa" href="#" target="_blank" rel="noopener">Join the channel →</a></div>
       <div class="note" id="gty-wa-note"></div>
+      <div class="waqr"><img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/whatsapp-rickey-army-qr.png" width="150" height="150" alt="QR code to join the Rickey Army WhatsApp channel"><span>On a computer? Scan this with your phone's camera to join.</span></div>
     </div></div>
     <div class="rk">
       <img src="https://shuri-lab.github.io/rickey-tiktokshop-project/images/rickey-bestbuy.jpg" alt="Rickey">
@@ -62,7 +67,7 @@ section:has(#gtty-root),[class*="section-"]:has(#gtty-root),.c-row:has(#gtty-roo
 </div>
 <script>
 (function(){
-  var GT_LINKS={course:'https://54ejrjbw49ecsisozh44.app.clientclub.net/',whatsapp:'',support:'moses@nhotpursuit.com'};
+  var GT_LINKS={course:'https://54ejrjbw49ecsisozh44.app.clientclub.net/',whatsapp:'https://whatsapp.com/channel/0029Vb9qzenD8SDzEWzhIJ1t',support:'moses@nhotpursuit.com'};
   document.title="You're in | TikTok Shop Headstart";
   var c=document.getElementById('gty-course'),w=document.getElementById('gty-wa'),h=document.getElementById('gty-help');
   if(GT_LINKS.course){c.href=GT_LINKS.course;}else{c.className+=' off';}

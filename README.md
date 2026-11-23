@@ -52,7 +52,7 @@ Funnel "Rickey · TikTok Shop Headstart" in the Hot Pursuit LLC sub-account, on 
 
 - **Course:** Memberships → "TikTok Shop Headstart" (Start here + Day 1 to Day 7, videos to upload). Login: the client portal.
 - **Workflows:** "Rickey · Headstart delivery" (order with the $27 product → grant course → delivery email) and "Rickey · Starter Product List delivery" (order with the bump → download email).
-- **Downloads:** `downloads/` (public for now; move to GHL Media before making the repo private).
+- **Paid PDFs:** not in this repo. They live inside the GHL courses (lesson "Downloadable Resources"), behind the buyer's login.
 - **Still to fill:** WhatsApp channel link (thank-you `GT_LINKS.whatsapp` + delivery email `WHATSAPP-LINK-GOES-HERE`), support email (`GT_LINKS.support`), course thumbnail and videos, sender name/email.
 
 ### Speed (Nov 20 update)

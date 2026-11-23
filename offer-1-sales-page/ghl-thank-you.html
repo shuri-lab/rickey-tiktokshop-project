@@ -40,14 +40,12 @@ section:has(#gtty-root),[class*="section-"]:has(#gtty-root),.c-row:has(#gtty-roo
     <div class="step"><div class="n">1</div><div>
       <h2>Watch Day 1.</h2>
       <div class="btns"><a class="btn" id="gty-course" href="#">Open my course →</a></div>
-      <div class="note" id="gty-course-note"></div>
+      <div class="note" id="gty-course-note">First time? Tap "Open my course" in the email I just sent you. It signs you in.</div>
     </div></div>
     <div class="step"><div class="n">2</div><div>
-      <h2>Download your guides.</h2>
-      <div class="btns">
-        <a class="btn dark" href="https://shuri-lab.github.io/rickey-tiktokshop-project/downloads/30-day-first-sale-challenge.pdf" target="_blank" rel="noopener">⬇ 30-Day Guide (PDF)</a>
-      </div>
-      <div class="note">Added The Starter Product List? Its download link is in your email.</div>
+      <h2>Get your guides.</h2>
+      <p>Your 30-Day First Sale Challenge (PDF) is inside your course, in the first lesson, "Start here".</p>
+      <div class="note">Added The Starter Product List or My $4M TikTok Shop System? They're in the same place, next to your course.</div>
     </div></div>
     <div class="step"><div class="n">3</div><div>
       <h2>Join the Rickey Army.</h2>
@@ -64,10 +62,10 @@ section:has(#gtty-root),[class*="section-"]:has(#gtty-root),.c-row:has(#gtty-roo
 </div>
 <script>
 (function(){
-  var GT_LINKS={course:'https://54ejrjbw49ecsisozh44.app.clientclub.net/',whatsapp:'',support:''};
+  var GT_LINKS={course:'https://54ejrjbw49ecsisozh44.app.clientclub.net/',whatsapp:'',support:'moses@nhotpursuit.com'};
   document.title="You're in | TikTok Shop Headstart";
   var c=document.getElementById('gty-course'),w=document.getElementById('gty-wa'),h=document.getElementById('gty-help');
-  if(GT_LINKS.course){c.href=GT_LINKS.course;}else{c.className+=' off';document.getElementById('gty-course-note').textContent='Your course login is on its way to your email.';}
+  if(GT_LINKS.course){c.href=GT_LINKS.course;}else{c.className+=' off';}
   if(GT_LINKS.whatsapp){w.href=GT_LINKS.whatsapp;}else{w.className+=' off';document.getElementById('gty-wa-note').textContent='The channel link is coming to your email.';}
   if(GT_LINKS.support){h.innerHTML="Didn't get the email? Check spam or Promotions, or write to <a href=\"mailto:"+GT_LINKS.support+"\">"+GT_LINKS.support+"</a>.";}
 })();

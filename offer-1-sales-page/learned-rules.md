@@ -9,7 +9,7 @@
 - Never use the word "steal" (buttons say "GET", not "STEAL").
 - Hero: the mockup image goes right under the headline.
 - No refund line under the buttons; the hero button only has "One-time $27 · instant access".
-- Section 2 headline ends "You Need to Start Posting."
+- Section 2 headline ends "You Need a Plan That Gets You Sales." (v1.1, Nov 24; before: "You Need to Start Posting.")
 - Videos: a horizontal carousel of Rickey's videos in section 2 (dark section).
 - Section 3 shows Rickey's photo + the brand logos beside the story (they also stay in section 12).
 - More black sections so the page doesn't read as one long section: 2, 5, 8, 11 are dark.

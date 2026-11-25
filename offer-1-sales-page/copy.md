@@ -13,7 +13,7 @@ One-time $27 · instant access
 Brands Rickey has worked with
 
 ## SECTION 2
-You Don't Need Another Video About TikTok Shop. You Need to Start Posting.
+You Don't Need Another Video About TikTok Shop. You Need a Plan That Gets You Sales.
 You don't need one more side hustle video at 1am.
 You don't need another guru telling you to "just believe."
 And you definitely don't need another course you open once + never log back into.
@@ -24,7 +24,7 @@ With TikTok Shop Headstart, you'll:
 So you stop opening TikTok, scrolling for an hour + closing it with nothing posted.
 **Pick products that already sell before you film a thing.**
 So every video you make has a real shot, instead of being a guess.
-**Join the Rickey Army, Rickey's private WhatsApp channel + watch your milestones stack up.**
+**Join the Rickey Army, Rickey's private WhatsApp channel.**
 So you get fresh hooks + winning products from Rickey as you go, and see proof it's working early enough to keep going… and start building something that's your own.
 [BUTTON: GET INSTANT ACCESS · $27 →]
 

@@ -16,8 +16,7 @@ Everything for Rickey's TikTok Shop offers in one place: the live Offer 1 sales 
 Total value $201, today $27. Order bump at checkout: The Starter Product List, $17. Guarantee: do the 30-day challenge, post every day, and if there's no sale within 90 days, full refund.
 
 ### How the buttons work (for the Stripe setup)
-- Every "GET INSTANT ACCESS · $27" button jumps to the offer stack on the page (`#buy`).
-- **Only one button goes to checkout:** the one inside the offer stack. Its link is currently the placeholder `PASTE-YOUR-CHECKOUT-LINK`. Search `index.html` for that text and replace it with the Stripe checkout URL.
+- Every "GET INSTANT ACCESS · $27" button, the sticky bar included, goes straight to the checkout: `https://davidhsai.com/headstart-checkout` (v1.1, Nov 24). To change the checkout address, replace it in every file that uses it.
 - The $17 Starter Product List is shown on the page as "Add at checkout for $17", so it should be the order bump in the checkout.
 - A sticky "Instant access · $27" bar appears on phones after the hero and hides while the offer stack is on screen.
 

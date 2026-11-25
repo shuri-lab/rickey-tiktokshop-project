@@ -19,7 +19,7 @@
 - Hero subheadline (client wording, Nov 20): "Follow the same plan behind Rickey's $4M+ in TikTok Shop sales: a 7-day course on how to find winning products, make viral videos, and make sales, plus a 30-day plan that walks you there, one video a day. No following, no camera experience, no guessing what to film."
 - Mobile first (90% of visitors): on an iPhone 16 (393x852) the alert bar, logo, pill, headline, hero image, subheadline and button must all fit on the first screen.
 - Hero subheadline highlights: marker on "behind Rickey's $4M+ in TikTok Shop sales"; red bold on "find winning products", "make viral videos", "make sales". Do not highlight "one video a day".
-- Every button says "GET INSTANT ACCESS · $27 →". All buttons jump to the offer stack (#buy); only the offer stack button goes to checkout.
+- Every button says "GET INSTANT ACCESS · $27 →". Every button goes straight to the checkout (v1.1, Nov 24; before that they jumped to #buy). The offer stack section stays on the page.
 - Sticky bottom bar after the hero ("Instant access · $27" + button), hidden while the offer stack is on screen. Brand logo slider ("Brands Rickey has worked with") right under the hero.
 - Section 2 outcomes have images: outcome 1 = TikTok screenshots, outcome 2 = product check screenshots, outcome 3 = private WhatsApp channel (AI image).
 - Section 3 on mobile: headline first, then Rickey's photo + logos, then the story. Client will send real Best Buy photos.
